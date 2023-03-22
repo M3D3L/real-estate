@@ -27,11 +27,6 @@ import Seo from '@/components/Seo';
 export default function AllPage({properties, selected}) {
   const renderBlogCard = (item) => <BlogCard prop={item} />;
 
-  const handleSubmit = (values, actions) => {
-    console.log(values);
-    actions.setSubmitting(false);
-  };
-
   const navigateTo = (e) => {
      //get the value of the button then navigate to that page
         const { value } = e.target;

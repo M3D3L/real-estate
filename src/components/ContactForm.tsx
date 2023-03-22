@@ -34,7 +34,7 @@ const ContactForm: React.FC<IProps> = ({ onSubmit }) => {
       {({ errors, touched }) => (
         <Form className="bg-white p-8 rounded-lg grid content-center min-h-[500px]">
           <div className="mb-4">
-            <label htmlFor="name" className="block text-teal-400 text-xl font-bold mb-2">
+            <label htmlFor="name" className="block text-teal-400 text-xl font-semibold mb-2">
               Name
             </label>
             <Field
@@ -50,7 +50,7 @@ const ContactForm: React.FC<IProps> = ({ onSubmit }) => {
           </div>
 
           <div className="mb-4">
-            <label htmlFor="email" className="block text-teal-400 text-xl font-bold mb-2">
+            <label htmlFor="email" className="block text-teal-400 text-xl font-semibold mb-2">
               Email
             </label>
             <Field
@@ -68,7 +68,7 @@ const ContactForm: React.FC<IProps> = ({ onSubmit }) => {
           <div className="mb-4">
             <label
               htmlFor="message"
-              className="block text-teal-400 text-xl font-bold mb-2"
+              className="block text-teal-400 text-xl font-semibold mb-2"
             >
               Message
             </label>

@@ -12,14 +12,13 @@ const BaseFooter = () => {
     <footer className='body-font bg-white text-gray-700'>
       <div className='md:flex-no-wrap container relative mx-auto flex flex-col flex-wrap p-8 px-4 md:items-center lg:flex-row lg:justify-between lg:px-8 xl:px-32 '>
         <div className='z-0 mx-auto mb-6 w-64 md:mx-0 md:mb-0 md:w-auto'>
-          <a className='title-font flex flex-col items-center justify-center gap-2 font-medium text-gray-900 md:justify-start lg:flex-row'>
+          <div className='title-font flex flex-col items-center justify-center gap-2 font-medium text-gray-900 md:justify-start lg:flex-row'>
             <span className='ml-3 text-xl font-bold text-teal-400'>
               Tetakawi
             </span>
             <p className='text-gray-700'>
               {legalMessage}
             </p>
-            <nav>
             <a
               onClick={message}
               className='cursor-pointer text-gray-700 hover:text-teal-400'
@@ -29,8 +28,8 @@ const BaseFooter = () => {
                 </p>
               
             </a>
-          </nav>
-          </a>
+  
+          </div>
         </div>
 
         <div className='inline-flex w-full flex-col justify-center md:mt-2 md:w-auto'>

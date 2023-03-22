@@ -11,7 +11,7 @@ export default function PropertyCard({ prop }: { prop: PropertyCardProps }) {
         src={prop.image}
         width='400'
         height='250'
-        alt={prop.title + 'Picture'}
+        alt={prop.title + ' Picture'}
       />
       <h3 className='px-4 pt-4 text-2xl font-bold'>{prop.title}</h3>
       <p className='px-4 text-gray-700 line-clamp-3'>{prop.description}</p>

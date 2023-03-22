@@ -21,21 +21,21 @@ export default function BlogCard({ prop }: { prop: BlogCardProps }) {
       </h3>
 
       <div className='flex items-center space-x-2 px-4 pb-4'>
-        <div className='h-10 w-10 overflow-hidden shadow-sm rounded-full bg-teal-400'>
+        <div className='h-10 w-10 overflow-hidden rounded-full bg-teal-400 shadow-sm'>
           <NextImage
             useSkeleton
             className='h-full w-full object-cover'
             src={prop.image}
             width='100'
             height='100'
-            alt={prop.title + 'Picture'}
+            alt={prop.title + ' Picture'}
           />
         </div>
         <div className='text-left'>
           <p className='font-semibold text-teal-500'>{prop.name}</p>
           <p className='text-sm font-semibold text-gray-500'>{prop.date}</p>
         </div>
-        <div className='bg-teal-400 xl:block hidden text-white transform transition-all duration-150 ease-in-out group-hover:bg-teal-500 absolute bottom-100 lg:bottom-4 right-4 px-2 py-1 rounded-sm'>
+        <div className='bottom-100 absolute right-4 hidden transform rounded-sm bg-teal-400 px-2 py-1 text-white transition-all duration-150 ease-in-out group-hover:bg-teal-500 lg:bottom-4 xl:block'>
           Read More
         </div>
       </div>

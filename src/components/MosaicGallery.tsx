@@ -18,8 +18,8 @@ const MosaicGallery = ({ prop }: { prop: MosaicGalleryProps }) => {
                 height='500'
                 alt={one.title}
               />
-              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-300 group-hover:w-full'>
-                <div className='absolute bottom-0 flex flex-col p-2 lg:p-4 text-white'>
+              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-150 group-hover:w-full'>
+                <div className='absolute bottom-0 flex flex-col p-2 text-white opacity-0 transition-all duration-500 group-hover:opacity-100 lg:p-4'>
                   <h3>{one.title}</h3>
 
                   <h5 className='hidden md:block'>{one.description}</h5>
@@ -39,8 +39,8 @@ const MosaicGallery = ({ prop }: { prop: MosaicGalleryProps }) => {
                 height='500'
                 alt={two.title}
               />
-              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-300 group-hover:w-full'>
-                <div className='absolute bottom-0 flex flex-col p-2 lg:p-4 text-white'>
+              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-150 group-hover:w-full'>
+                <div className='absolute bottom-0 flex flex-col p-2 text-white opacity-0 transition-all duration-500 group-hover:opacity-100 lg:p-4'>
                   <h3>{one.title}</h3>
 
                   <h5 className='hidden md:block'>{one.description}</h5>
@@ -60,8 +60,8 @@ const MosaicGallery = ({ prop }: { prop: MosaicGalleryProps }) => {
                 height='1000'
                 alt={three.title}
               />
-              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-300 group-hover:w-full'>
-                <div className='absolute bottom-0 flex flex-col p-2 lg:p-4 text-white'>
+              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-150 group-hover:w-full'>
+                <div className='absolute bottom-0 flex flex-col p-2 text-white opacity-0 transition-all duration-500 group-hover:opacity-100 lg:p-4'>
                   <h3>{one.title}</h3>
 
                   <h5 className='hidden md:block'>{one.description}</h5>
@@ -83,8 +83,8 @@ const MosaicGallery = ({ prop }: { prop: MosaicGalleryProps }) => {
                 height='1000'
                 alt={four.title}
               />
-              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-300 group-hover:w-full'>
-                <div className='absolute bottom-0 flex flex-col p-2 lg:p-4 text-white'>
+              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-150 group-hover:w-full'>
+                <div className='absolute bottom-0 flex flex-col p-2 text-white opacity-0 transition-all duration-500 group-hover:opacity-100 lg:p-4'>
                   <h3>{one.title}</h3>
 
                   <h5 className='hidden md:block'>{one.description}</h5>
@@ -104,8 +104,8 @@ const MosaicGallery = ({ prop }: { prop: MosaicGalleryProps }) => {
                 height='500'
                 alt={five.title}
               />
-              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-300 group-hover:w-full'>
-                <div className='absolute bottom-0 flex flex-col p-2 lg:p-4 text-white'>
+              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-150 group-hover:w-full'>
+                <div className='absolute bottom-0 flex flex-col p-2 text-white opacity-0 transition-all duration-500 group-hover:opacity-100 lg:p-4'>
                   <h3>{one.title}</h3>
 
                   <h5 className='hidden md:block'>{one.description}</h5>
@@ -125,8 +125,8 @@ const MosaicGallery = ({ prop }: { prop: MosaicGalleryProps }) => {
                 height='500'
                 alt={six.title}
               />
-              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-300 group-hover:w-full'>
-                <div className='absolute bottom-0 flex flex-col p-2 lg:p-4 text-white'>
+              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-150 group-hover:w-full'>
+                <div className='absolute bottom-0 flex flex-col p-2 text-white opacity-0 transition-all duration-500 group-hover:opacity-100 lg:p-4'>
                   <h3>{one.title}</h3>
 
                   <h5 className='hidden md:block'>{one.description}</h5>

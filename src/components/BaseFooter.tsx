@@ -16,19 +16,13 @@ const BaseFooter = () => {
             <span className='ml-3 text-xl font-bold text-teal-400'>
               Tetakawi
             </span>
-            <p className='text-gray-700'>
-              {legalMessage}
-            </p>
-            <a
+            <p className='text-gray-700'>{legalMessage}</p>
+            <div
               onClick={message}
               className='cursor-pointer text-gray-700 hover:text-teal-400'
             >
-                <p>
-                Legal
-                </p>
-              
-            </a>
-  
+              <p>Legal</p>
+            </div>
           </div>
         </div>
 

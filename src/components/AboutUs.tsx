@@ -4,12 +4,9 @@ const img = '/../public/images/beachside.png';
 
 export default function AboutUs() {
   return (
-    <div
-      id='about'
-      className='mx-auto grid min-h-screen content-center'
-    >
+    <div id='about' className='mx-auto grid min-h-screen content-center'>
       <div className='mt-6 grid grid-cols-1 content-center gap-4 lg:mt-0 lg:grid-cols-2'>
-        <div className='relative flex h-auto lg:h-[540px] w-full in-view flex-col overflow-hidden rounded-lg bg-white shadow-lg'>
+        <div className='in-view relative flex h-auto w-full flex-col overflow-hidden rounded-lg bg-white shadow-lg lg:h-[540px]'>
           <NextImage
             useSkeleton
             className='w-full rounded-t-lg align-middle'
@@ -41,115 +38,113 @@ export default function AboutUs() {
           </blockquote>
         </div>
 
-        <div className='flex flex-wrap lg:h-[540px] w-full content-center overflow-hidden rounded-lg  bg-white shadow-lg'>
-         
-            <div className='w-full px-4 md:w-6/12'>
-              <div className='relative mt-4 flex flex-col'>
-                <div className='flex-auto px-4 py-5'>
-                  <div className='in-view mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-teal-500 p-3 text-center shadow-lg'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      fill='none'
-                      viewBox='0 0 24 24'
-                      stroke-width='1.5'
-                      stroke='currentColor'
-                      className='h-6 w-6 text-white'
-                    >
-                      <path
-                        stroke-linecap='round'
-                        stroke-linejoin='round'
-                        d='M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25'
-                      />
-                    </svg>
-                  </div>
-                  <h6 className='mb-1 text-xl font-semibold'>CSS Components</h6>
-                  <p className='text-blueGray-500 mb-4'>
-                    Notus JS comes with a huge number of Fully Coded CSS
-                    components.
-                  </p>
+        <div className='flex w-full flex-wrap content-center overflow-hidden rounded-lg bg-white  shadow-lg lg:h-[540px]'>
+          <div className='w-full px-4 md:w-6/12'>
+            <div className='relative mt-4 flex flex-col'>
+              <div className='flex-auto px-4 py-5'>
+                <div className='in-view mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-teal-500 p-3 text-center shadow-lg'>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    strokeWidth='1.5'
+                    stroke='currentColor'
+                    className='h-6 w-6 text-white'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25'
+                    />
+                  </svg>
                 </div>
-              </div>
-              <div className='relative flex min-w-0 flex-col'>
-                <div className='flex-auto px-4 py-5'>
-                  <div className='text-blueGray-500 in-view mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-teal-500 p-3 text-center shadow-lg'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      fill='none'
-                      viewBox='0 0 24 24'
-                      stroke-width='1.5'
-                      stroke='currentColor'
-                      className='h-6 w-6 text-white'
-                    >
-                      <path
-                        stroke-linecap='round'
-                        stroke-linejoin='round'
-                        d='M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25'
-                      />
-                    </svg>
-                  </div>
-                  <h6 className='mb-1 text-xl font-semibold'>
-                    JavaScript Components
-                  </h6>
-                  <p className='text-blueGray-500 mb-4'>
-                    We also feature many dynamic components for React, NextJS,
-                    Vue and Angular.
-                  </p>
-                </div>
+                <h6 className='mb-1 text-xl font-semibold'>CSS Components</h6>
+                <p className='text-blueGray-500 mb-4'>
+                  Notus JS comes with a huge number of Fully Coded CSS
+                  components.
+                </p>
               </div>
             </div>
-            <div className='w-full px-4 md:w-6/12'>
-              <div className='relative mt-4 flex min-w-0 flex-col'>
-                <div className='flex-auto px-4 py-5'>
-                  <div className='text-blueGray-500 in-view mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-teal-500 p-3 text-center shadow-lg'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      fill='none'
-                      viewBox='0 0 24 24'
-                      stroke-width='1.5'
-                      stroke='currentColor'
-                      className='h-6 w-6 text-white'
-                    >
-                      <path
-                        stroke-linecap='round'
-                        stroke-linejoin='round'
-                        d='M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25'
-                      />
-                    </svg>
-                  </div>
-                  <h6 className='mb-1 text-xl font-semibold'>Pages</h6>
-                  <p className='text-blueGray-500 mb-4'>
-                    This extension also comes with 3 sample pages. They are
-                    fully coded so you can start working.
-                  </p>
+            <div className='relative flex min-w-0 flex-col'>
+              <div className='flex-auto px-4 py-5'>
+                <div className='text-blueGray-500 in-view mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-teal-500 p-3 text-center shadow-lg'>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    strokeWidth='1.5'
+                    stroke='currentColor'
+                    className='h-6 w-6 text-white'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25'
+                    />
+                  </svg>
                 </div>
-              </div>
-              <div className='relative flex min-w-0 flex-col'>
-                <div className='flex-auto px-4 py-5'>
-                  <div className='text-blueGray-500 in-view mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-teal-500 p-3 text-center shadow-lg'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      fill='none'
-                      viewBox='0 0 24 24'
-                      stroke-width='1.5'
-                      stroke='currentColor'
-                      className='h-6 w-6 text-white'
-                    >
-                      <path
-                        stroke-linecap='round'
-                        stroke-linejoin='round'
-                        d='M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25'
-                      />
-                    </svg>
-                  </div>
-                  <h6 className='mb-1 text-xl font-semibold'>Documentation</h6>
-                  <p className='text-blueGray-500 mb-4'>
-                    Built by developers for developers. You will love how easy
-                    is to to work with Notus JS.
-                  </p>
-                </div>
+                <h6 className='mb-1 text-xl font-semibold'>
+                  JavaScript Components
+                </h6>
+                <p className='text-blueGray-500 mb-4'>
+                  We also feature many dynamic components for React, NextJS, Vue
+                  and Angular.
+                </p>
               </div>
             </div>
-       
+          </div>
+          <div className='w-full px-4 md:w-6/12'>
+            <div className='relative mt-4 flex min-w-0 flex-col'>
+              <div className='flex-auto px-4 py-5'>
+                <div className='text-blueGray-500 in-view mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-teal-500 p-3 text-center shadow-lg'>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    strokeWidth='1.5'
+                    stroke='currentColor'
+                    className='h-6 w-6 text-white'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25'
+                    />
+                  </svg>
+                </div>
+                <h6 className='mb-1 text-xl font-semibold'>Pages</h6>
+                <p className='text-blueGray-500 mb-4'>
+                  This extension also comes with 3 sample pages. They are fully
+                  coded so you can start working.
+                </p>
+              </div>
+            </div>
+            <div className='relative flex min-w-0 flex-col'>
+              <div className='flex-auto px-4 py-5'>
+                <div className='text-blueGray-500 in-view mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-teal-500 p-3 text-center shadow-lg'>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    strokeWidth='1.5'
+                    stroke='currentColor'
+                    className='h-6 w-6 text-white'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25'
+                    />
+                  </svg>
+                </div>
+                <h6 className='mb-1 text-xl font-semibold'>Documentation</h6>
+                <p className='text-blueGray-500 mb-4'>
+                  Built by developers for developers. You will love how easy is
+                  to to work with Notus JS.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

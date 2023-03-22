@@ -10,10 +10,16 @@ export const TourComponent = () => {
     script.dataset.short = 'MMqLrAhy2oN';
     script.dataset.path = 'tours';
     script.src = 'https://app.cloudpano.com/public/shareScript.js';
-    document.getElementById('MMqLrAhy2oN')?.appendChild(script);
+
+    //check if the script is already attached to the DOM
+
+    //remove all scripts with the same id
+    const scripts = document.querySelectorAll(`script[id='${script.id}']`);
+    scripts.forEach((s) => s.remove());
 
     return () => {
-      document.getElementById('MMqLrAhy2oN')?.removeChild(script);
+      //check if the script is already attached to id and return if it is\\
+      document.getElementById('MMqLrAhy2oN')?.appendChild(script);
     };
   }, []);
 

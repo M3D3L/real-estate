@@ -15,31 +15,27 @@ export default function ElementPage({ property, properties, type }) {
   const map = useRef(null);
   //use effect so that map is the same height as the parent container and keep track of changes
   useEffect(() => {
-    //get the height of the parent container
-    const height = parentContainer.current?.clientHeight;
-    //set the height of the map to the height of the parent container
-    map.current.style.height = `${height}px`;
+    const parentContainerRef = parentContainer.current;
+    const mapRef = map.current;
 
-    // add an event listener to detect changes in the height of the parent container
-    const resizeObserver = new ResizeObserver(() => {
-      const height = parentContainer.current?.clientHeight;
-      if (map.current) {
-        map.current.style.height = `${height}px`;
-      }
-    });
-    resizeObserver.observe(parentContainer.current);
+    const setMapHeight = () => {
+      const height = parentContainerRef?.clientHeight;
+      mapRef.style.height = `${height}px`;
+    };
 
-    // cleanup function to remove the event listener when the component unmounts
+    setMapHeight();
+
+    const resizeObserver = new ResizeObserver(setMapHeight);
+    resizeObserver.observe(parentContainerRef);
+
     return () => {
-      if (parentContainer.current) {
-        resizeObserver.unobserve(parentContainer.current);
-      }
+      resizeObserver.unobserve(parentContainerRef);
     };
   }, [parentContainer]);
 
   const filteredProperties = useMemo(
     () => properties.filter((p) => p.id !== property.id),
-    [property]
+    [property, properties]
   );
 
   const renderPropertyCard = useCallback(

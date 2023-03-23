@@ -4,7 +4,7 @@ import { BlogCardProps } from '@/interfaces/blogCard';
 
 export default function BlogCard({ prop }: { prop: BlogCardProps }) {
   return (
-    <div className='in-view group rounded-lg bg-white'>
+    <div className='in-view group relative min-h-[350px] rounded-lg bg-white pb-16'>
       <div className='overflow-hidden rounded-t-lg'>
         <NextImage
           useSkeleton
@@ -16,7 +16,7 @@ export default function BlogCard({ prop }: { prop: BlogCardProps }) {
         />
       </div>
 
-      <h3 className='mt-2 truncate px-4 pb-2 text-left text-xl font-semibold capitalize leading-none text-gray-900'>
+      <h3 className='mt-4 truncate px-4 pb-4 text-left text-xl font-semibold capitalize leading-none text-gray-900'>
         {prop.title}
       </h3>
 
@@ -35,9 +35,9 @@ export default function BlogCard({ prop }: { prop: BlogCardProps }) {
           <p className='font-semibold text-teal-500'>{prop.name}</p>
           <p className='text-sm font-semibold text-gray-500'>{prop.date}</p>
         </div>
-        <div className='bottom-100 absolute right-4 hidden transform rounded-sm bg-teal-400 px-2 py-1 text-white transition-all duration-150 ease-in-out group-hover:bg-teal-500 lg:bottom-4 xl:block'>
-          Read More
-        </div>
+      </div>
+      <div className='bottom-100 absolute right-4 bottom-4 transform rounded-sm bg-teal-400 px-2 py-1 text-white transition-all duration-150 ease-in-out group-hover:bg-teal-500 lg:bottom-4'>
+        Read More
       </div>
     </div>
   );

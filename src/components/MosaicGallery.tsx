@@ -2,138 +2,56 @@ import NextImage from '@/components/NextImage';
 
 import { MosaicGalleryProps } from '@/interfaces/mosaicGallery';
 
+const ImgCard = ({ prop }: { prop: MosaicGalleryProps }) => {
+  return (
+    <div className='in-view group absolute z-0 flex h-full w-full overflow-hidden'>
+      <NextImage
+        className='absolute z-0 h-full w-full rounded-lg object-cover'
+        src={prop.image}
+        alt={prop.title}
+        layout='fill'
+      />
+      <span className='z-10 grid h-full w-full cursor-pointer content-center overflow-hidden rounded-lg bg-black bg-opacity-50 px-4 text-white transition-all duration-150 hover:opacity-100 group-hover:w-full lg:w-0 lg:opacity-0'>
+        <h3>{prop.title}</h3>
+        <h5>{prop.description}</h5>
+        <h4>{prop.price}</h4>
+      </span>
+    </div>
+  );
+};
+
 const MosaicGallery = ({ prop }: { prop: MosaicGalleryProps }) => {
   const [one, two, three, four, five, six] = prop;
   return (
     <div className='container mx-auto py-2'>
-      <div className='-m-1 flex flex-col md:-m-2 lg:flex-row'>
-        <div className='flex w-full flex-wrap lg:w-1/2'>
-          <div className='in-view group relative w-1/2 p-1 md:p-2'>
-            <div className='relative overflow-hidden rounded-lg'>
-              <NextImage
-                useSkeleton
-                className='w-full transform transition-all group-hover:scale-105'
-                src={one.image}
-                width='500'
-                height='500'
-                alt={one.title}
-              />
-              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-150 group-hover:w-full'>
-                <div className='absolute bottom-0 flex flex-col p-2 text-white opacity-0 transition-all duration-500 group-hover:opacity-100 lg:p-4'>
-                  <h3>{one.title}</h3>
-
-                  <h5 className='hidden md:block'>{one.description}</h5>
-
-                  <h4>{one.price}</h4>
-                </div>
-              </div>
+      <div className='-m-1 flex flex-col gap-4 md:-m-2 lg:flex-row'>
+        <div className='flex h-[550px] w-full flex-col gap-4 lg:w-1/2 '>
+          <div className='flex h-1/2 w-full flex-row gap-4'>
+            <div className='relative h-full w-full overflow-hidden rounded-lg shadow-lg'>
+              <ImgCard prop={one} />
+            </div>
+            <div className='f-full relative w-full overflow-hidden rounded-lg shadow-lg'>
+              <ImgCard prop={two} />
             </div>
           </div>
-          <div className='in-view group w-1/2 p-1 md:p-2'>
-            <div className='relative overflow-hidden rounded-lg'>
-              <NextImage
-                useSkeleton
-                className='w-full transform transition-all group-hover:scale-105'
-                src={two.image}
-                width='500'
-                height='500'
-                alt={two.title}
-              />
-              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-150 group-hover:w-full'>
-                <div className='absolute bottom-0 flex flex-col p-2 text-white opacity-0 transition-all duration-500 group-hover:opacity-100 lg:p-4'>
-                  <h3>{one.title}</h3>
-
-                  <h5 className='hidden md:block'>{one.description}</h5>
-
-                  <h4>{one.price}</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='in-view group w-full p-1 md:p-2'>
-            <div className='relative overflow-hidden rounded-lg'>
-              <NextImage
-                useSkeleton
-                className='w-full transform transition-all group-hover:scale-105'
-                src={three.image}
-                width='1000'
-                height='1000'
-                alt={three.title}
-              />
-              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-150 group-hover:w-full'>
-                <div className='absolute bottom-0 flex flex-col p-2 text-white opacity-0 transition-all duration-500 group-hover:opacity-100 lg:p-4'>
-                  <h3>{one.title}</h3>
-
-                  <h5 className='hidden md:block'>{one.description}</h5>
-
-                  <h4>{one.price}</h4>
-                </div>
-              </div>
-            </div>
+          <div className='relative h-1/2 w-full overflow-hidden rounded-lg shadow-lg'>
+            <ImgCard prop={three} />
           </div>
         </div>
-        <div className='flex w-full flex-wrap lg:w-1/2'>
-          <div className='in-view group w-full p-1 md:p-2'>
-            <div className='relative overflow-hidden rounded-lg'>
-              <NextImage
-                useSkeleton
-                className='w-full transform transition-all group-hover:scale-105'
-                src={four.image}
-                width='1000'
-                height='1000'
-                alt={four.title}
-              />
-              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-150 group-hover:w-full'>
-                <div className='absolute bottom-0 flex flex-col p-2 text-white opacity-0 transition-all duration-500 group-hover:opacity-100 lg:p-4'>
-                  <h3>{one.title}</h3>
 
-                  <h5 className='hidden md:block'>{one.description}</h5>
-
-                  <h4>{one.price}</h4>
-                </div>
-              </div>
+        <div className='flex h-full min-h-[550px] w-full flex-row gap-4 lg:w-1/2 '>
+          <div className='w-full lg:w-1/2'>
+            <div className='relative h-full w-full overflow-hidden rounded-lg shadow-lg'>
+              <ImgCard prop={four} />
             </div>
           </div>
-          <div className='in-view group w-1/2 p-1 md:p-2'>
-            <div className='relative overflow-hidden rounded-lg'>
-              <NextImage
-                useSkeleton
-                className='w-full transform transition-all group-hover:scale-105'
-                src={five.image}
-                width='500'
-                height='500'
-                alt={five.title}
-              />
-              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-150 group-hover:w-full'>
-                <div className='absolute bottom-0 flex flex-col p-2 text-white opacity-0 transition-all duration-500 group-hover:opacity-100 lg:p-4'>
-                  <h3>{one.title}</h3>
 
-                  <h5 className='hidden md:block'>{one.description}</h5>
-
-                  <h4>{one.price}</h4>
-                </div>
-              </div>
+          <div className='flex w-full flex-col gap-4 lg:w-1/2'>
+            <div className='relative h-1/2 w-full overflow-hidden rounded-lg shadow-lg'>
+              <ImgCard prop={five} />
             </div>
-          </div>
-          <div className='in-view group w-1/2 p-1 md:p-2'>
-            <div className='relative overflow-hidden rounded-lg'>
-              <NextImage
-                useSkeleton
-                className='w-full transform transition-all group-hover:scale-105'
-                src={six.image}
-                width='500'
-                height='500'
-                alt={six.title}
-              />
-              <div className='absolute top-0 h-full w-0 cursor-pointer overflow-hidden bg-black bg-opacity-50 transition-all duration-150 group-hover:w-full'>
-                <div className='absolute bottom-0 flex flex-col p-2 text-white opacity-0 transition-all duration-500 group-hover:opacity-100 lg:p-4'>
-                  <h3>{one.title}</h3>
-
-                  <h5 className='hidden md:block'>{one.description}</h5>
-
-                  <h4>{one.price}</h4>
-                </div>
-              </div>
+            <div className='relative h-1/2 w-full overflow-hidden rounded-lg shadow-lg'>
+              <ImgCard prop={six} />
             </div>
           </div>
         </div>

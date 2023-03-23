@@ -1,3 +1,4 @@
+import router from 'next/router';
 import * as React from 'react';
 
 import { activities, blogs, lots, properties, rentals } from '@/data/mock';
@@ -10,12 +11,10 @@ import BlogCard from '@/components/BlogCard';
 import ContactForm from '@/components/ContactForm';
 import Layout from '@/components/layout/Layout';
 import MosaicGallery from '@/components/MosaicGallery';
-import OurPeople from '@/components/OurPeople';
 import PropertyCard from '@/components/PropertyCard';
 import Seo from '@/components/Seo';
 
 import { PropertyCardProps } from '@/interfaces/propertyCard';
-import router from 'next/router';
 
 /**
  * SVGR Support
@@ -37,8 +36,7 @@ export default function HomePage() {
   const renderBlogCard = (item) => <BlogCard prop={item} />;
 
   const handleSubmit = (values, actions) => {
-    console.log(values);
-    actions.setSubmitting(false);
+    alert(values + actions);
   };
 
   const address = {
@@ -99,7 +97,7 @@ export default function HomePage() {
               items={selectedArray}
               renderItem={renderPropertyCard}
             />
-            <div className='flex w-full justify-center space-x-4 py-4'>
+            <div className='mt-8 flex w-full justify-center space-x-4 py-4'>
               <button
                 className={
                   selected === 'Properties'
